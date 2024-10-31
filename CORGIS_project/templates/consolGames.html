@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% set active_page = "page3" %}
+
+{% block title %}consol games{% endblock %}
+
+{% block content %}
+    <!--page content-->
+    <h1>console games</h1>
+	<p>On this page you can select a conlose and see what games are on it.</p>
+	<form action="/page3">
+          <select name="console"> 
+            {{ console_options }}
+          </select>
+		  <br><br>
+          <input type="submit" value="Show the console info">
+        </form>
+        <div id="consoleFacts">
+			{% for games in consoleFacts %}
+				<p>{{ games }}</p>
+			{% endfor %}
+        </div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% set active_page = "home" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+	<h1>Website Information</h1>
+	<div class="row">
+		  <div class="col-sm-6">
+	<p>This website has a page with info on games relesed from 2004 to 2010 and contains info on how long it takes to finish a game and if a person beat the game fast, slow or about evenly and if the person fully competed the game, only the main story, main story plus some extres and the time for thosos. It also say the ESRB rating, and the publisher. it does have missing info because I don't think it has every game from that time on it.</p>
+	<p>There is a another page with a list of games for consols of that time.</p>
+	<p>The last page has a list of games from publishers of that time.</p>
+	</div>
+		<div class="col-sm-6">
+		<img class="imag rounded" src="static/video-game-consoles.jpg" alt="a bunch of video game consoles from the 1980s to the 2000s" width="600" height="500">
+		</div>
+	</div>
+	<h2>DISCLAIMER: some of the game info is incorrect so don't trust every thing on this website, but most of it should be true.</h2>
+{% endblock %}

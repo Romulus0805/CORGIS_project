@@ -1,0 +1,58 @@
+{% extends "gameFacts.html" %}
+
+{% block content %}
+{{ super() }}
+    <!--page content-->
+	<h1>stats</h1>
+	<h3>Features</h3>
+    <p>Is it a handheld game: {{ ishandheld }}</p>
+	<p>Number of max players: {{ maxPlayers }}</p>
+	<p>Can people play online: {{ Multiplat }}</p>
+	<p>Is the game online: {{ online }}</p>
+	
+	<h3>Metadata</h3>
+	<p>The genra of the game: {{ genre }}</p>
+	<p>Is it a licensed game: {{ licen }}</p>
+	<p>The publisher: {{ publish }}</p>
+	<p>Is it a sequel: {{ sequel }}</p>
+	
+	<h3>Metrics</h3>
+	<p>Review score: {{ review }}</p>
+	<p>Sales: {{ sale }}</p>
+	<p>Used price: {{ used }}</p>
+	
+	<h3>Release</h3>
+	<p>Console: {{ console }}</p>
+	<p>Game rating: {{ rating }}</p>
+	<p>Is it a re-release: {{ re_release }}</p>
+	<p>Year of release: {{ year }}</p>
+	
+	<h3>Play Style Lengths</h3>
+	<p>Average: {{ average }}</p>
+	<p>Leisure: {{ leisure }}</p>
+	<p>Median: {{ median }}</p>
+	<p>Polled: {{ polled }}</p>
+	<p>Rushed: {{ rushed }}</p>
+	
+	<h3>Completionists</h3>
+	<p>Average: {{ average2 }}</p>
+	<p>Leisure: {{ leisure2 }}</p>
+	<p>Median: {{ median2 }}</p>
+	<p>Polled: {{ polled2 }}</p>
+	<p>Rushed: {{ rushed2 }}</p>
+	
+	<h3>Main + Extras</h3>
+	<p>Average: {{ average3 }}</p>
+	<p>Leisure: {{ leisure3 }}</p>
+	<p>Median: {{ median3 }}</p>
+	<p>Polled: {{ polled3 }}</p>
+	<p>Rushed: {{ rushed3 }}</p>
+	
+	<h3>Main Story</h3>
+	<p>Average: {{ average4 }}</p>
+	<p>Leisure: {{ leisure4 }}</p>
+	<p>Median: {{ median4 }}</p>
+	<p>Polled: {{ polled4 }}</p>
+	<p>Rushed: {{ rushed4 }}</p>
+	
+{% endblock %}
